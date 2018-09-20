@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bookstore</title>
+    <link rel="stylesheet"  href="style.css" type="text/css">
+    <meta name="author" content="Lawrence">
+    <meta name="keywords" content="book,bookstore">
+    <meta name="desription" content="The bookstore was my first demo,there were all kinds of books for you.">
+    <meta name="robots" content="index,follow">
+</head>
+<body>
+<script>
+    window.onload=function () {
+        confirm("本网站的部分模块仍在建设中，尽情期待。");
+    }
+
+        // .t1=document.write(Date())
+
+
+
+
+</script>
+
+<button  type="button" id="time" name="time" onclick=alert("CurrentTime:"+Date())  value="查看当前时间">查看当前时间</button>   <!--document.write(Date())可用来获取当前时间，日期，年份-->
+`
+<!--页眉   存放导航菜单  logo -->
+<div id="header-wrapper">
+<!--LOGO-->
+    <header class="container">
+<div id="logo">
+    <a href="index.html"><h1>Demo</h1></a>
+</div>
+        <div id="search">
+            <form action="index.html" method="get">
+                <input type="search" placeholder="搜索你想要的内容">
+                <input type="submit" value="搜索">
+            </form>
+</div>
+    </header><!--  导航菜单--><div id="nav">
+    <nav class="container">
+    <ul>
+        <li><a href="index.html">首页</a></li><li>
+        <a href="category.html">书籍分类</a>
+        <ul>
+            <li><a href="#">编程语言</a></li><li>
+            <a href="#">数据库</a></li><li>
+            <a href="#">图形图像</a> </li>
+        </ul>
+        </li><li>
+        <a href="specials.html"> 特刊降价</a></li><li>
+        <a href="contact.html"> 联系我们</a></li><li>
+        <a href="about.html"> 关于我们</a></li>
+    </ul>
+
+    <div id="menu-logo">
+      <a href="cart.html">购物车</a>
+    </div>
+</nav>
+    </div><!--内容    由左侧内容区和右侧边栏区构成   左侧内容区由图片切换广告,本周推荐,最近新书等  右侧由广告区,畅销图书,图书分类和关于书店等组成--><div id="content-wrapper" class="container">
+<!--左侧内容区-->
+    <article>
+        <!--图片切换广告-->
+        <div id="adv"></div>
+    <!--本周推荐-->
+        <section>
+            <h2 id="title1">本周推荐</h2>
+            <section class="recommend">
+                <h3>  《HTML5权威指南》</h3>
+                <a href="#"><img src="picture/html5quanweizhinan.jpg" alt="HTML5权威指南" > </a>
+            <div class="recommend-content">
+                <p>作为下一代web标准，
+                <mark>HTML5</mark>   <!--mark标签定义有记号的文本-->
+                   致力于为互联网开发者搭建更快捷，开放的沟通平台。业界普遍认为，在未来几年内，
+                <mark>HTML5</mark>
+                    无疑将成为移动互联网领域的主宰者。
+                </p>
+                <p>
+                    Adam,freeman曾在多家名企担任高级职务，现为畅销技术图书作家。
+                </p>
+            </div>
+                <div class="cartmore"><a class="cart" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a></div>
+            </section>
+            <section class="recommend">
+                <h3>《JavaScript权威指南》</h3>
+                <a href="#"><img src="picture/jsquanweizhinan.jpg" alt="JavaScript权威指南" > </a>
+            <div class="recommend-content">
+                <p>经典的JavaScript工具书，从1996年以来，本书已经成为JavaScript程序员心中的《圣经》。</p>
+                <p>David Flanagan,是一名程序员,也是一名作家.他在O'reilly出版的其他畅销书还包括《JavaScript Pocket Reference》,《The Ruby Programming Language》.</p>
+            </div>
+                <div class="cartmore"><a class="cart" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a></div>
+            </section>
+        </section>
+       <!-- 最近新书-->
+        <section class="article-section">
+            <h2 id="title2">最近新书</h2>
+            <section>
+            <h3>  《HTML5+CSS3从入门到精通》</h3>
+               <img src="picture/html5css3rumendaojingtong.jpg" alt="HTML5+CSS3从入门到精通" >
+            <div class="effect-1">
+                <div class="image-box">
+                </div>
+                <div class="text-desc">
+                    <h3> 《HTML5+CSS3从入门到精通》</h3>
+                <p>《<mark>HTML5</mark>+CSS3从入门到精通》通过基础知识+中小实例+综合案例的方式,讲述了用<mark>HTML5</mark>+CSS3设计构建网站的必备知识.
+                </p>
+                    <a class="btn" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a>
+            </div>
+            </div>
+        </section>
+            <section>
+            <h3>  《响应式web设计》</h3>
+               <img src="picture/xiangyingshiwebsheji.png" alt="响应式web设计" >
+            <div class="effect-1">
+                <div class="image-box">
+                </div>
+                <div class="text-desc">
+                    <h3> 《响应式web设计》</h3>
+                    <p>《响应式web设计:<mark>HTML5</mark>和CSS3实战》将当前web设计中热门的响应式设计技术与<mark>HTML5</mark>和CSS3结合起来,为读者全面深入地讲解了针对各种屏幕大小设计和开发现代网站的各种技术.
+                    </p>
+                    <a class="btn" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a>
+                </div>
+            </div>
+        </section>
+        </section>
+      <!--  最近促销-->
+        <section class="article-section">
+            <h2 id="title3">最近促销</h2>
+            <section>
+                <h3>《HTML5和CSS3实例教程》</h3>
+                <a href="#"><img src="picture/html5css3shilijiaocheng.jpg" class="promotion" alt="HTML5和CSS3实例教程" ></a>
+                <div><a class="cart" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a></div>
+            </section>
+            <section>
+                <h3>《JavaScript权威指南》</h3>
+                <a href="#"><img src="picture/jsquanweizhinan.jpg" class="promotion" alt="JavaScript权威指南"   ></a>
+                <div><a class="cart" href="cart.html">加入购物车</a>   <a class="more" href="more.html" > 详细内容</a></div>
+            </section>
+        </section>
+    </article><!--右侧边栏区--><aside>
+       <!-- 广告区-->
+        <section id="advert">
+            <a href="#"><img src="picture/newzealandairline.jpg" alt="Tesla" ></a>
+            <a href="#"><img src="picture/tecentcloud.png" alt="txcloud" ></a>
+            <a href="#"><img src="picture/exon.jpg" alt="exon " ></a>
+        </section>
+        <hr style=" color:black;">   <!--插入一条直线作为分割-->
+        <!--畅销图书-->
+        <section  id="best-selling">
+            <h2 id="title7">畅销图书</h2>
+            <ul>
+                <li><a class="selling" href="#"> 查令十字街84号(珍藏版)(汤唯,吴秀波主演北京遇上西雅图2)</a>   <!--href="#"表示空链接,可之后再修改-->
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="查令十字街84号(珍藏版)(汤唯,吴秀波主演北京遇上西雅图2)" href="#"><img width="80" height="80" src="picture/chalingshizijie84.jpg"></a>
+                    </div>
+                    <div class="p-name">
+                        <a title ="查令十字街84号(珍藏版)(汤唯,吴秀波主演北京遇上西雅图2)"
+                           href="#">查令十字街84号(珍藏版)(汤唯,吴秀波主演北京遇上西雅图2)</a>
+                        <strong>￥43.50</strong>
+                    <del>￥52.00</del>
+                    </div>
+                    </div>
+                </li>
+
+                <li><a class="selling" href="#"> 分享经济  供给侧改革的新经济方案</a>
+                <div class="curr">
+                    <div class="p-img">
+                        <a title="分享经济  供给侧改革的新经济方案" href="#"><img width="80" height="80" src="picture/fenxiangjingji.jpg"></a>
+                    </div>
+                    <div class="p-name">
+                        <a title ="分享经济  供给侧改革的新经济方案" href="#">分享经济  供给侧改革的新经济方案</a>
+                        <strong>￥43.50</strong>
+                        <del>￥52.00</del>
+                    </div>
+                </div>
+                </li>
+            </ul>
+        </section>
+        <hr style=" color:black;">
+        <!--图书分类-->
+        <section class="aside-section">
+            <h2 id="title4">图书分类</h2>
+            <ul>
+                <li><a href="category.html">编程语言</a></li>
+                <li><a href="category.html">数据库</a></li>
+                <li><a href="category.html">图形图像</a></li>
+                <li><a href="category.html">网页制作</a></li>
+                <li><a href="category.html">考试认证</a></li>
+            </ul>
+        </section><!--合作伙伴--><section class="aside-section">
+            <h2 id="title5">合作伙伴</h2>
+            <ul>
+                <li><a href="#">中国电子商务研究中心</a></li>
+                <li><a href="#">清华大学出版社</a></li>
+                <li><a href="#">中国人民大学出版社</a></li>
+                <li><a href="#">中国社会科学出版社</a></li>
+            </ul>
+        </section>
+        <hr style=" color:black;">
+        <!--关于书店-->
+        <section class="about">
+            <h2 id="title6">关于书店</h2>
+            <img src="picture/shuwu.jpg" alt="shuwu" width="250px" height="166.5px">
+            <p>该书店成立于2018年9月，由个人创建的一个书籍销售网站。</p>
+        </section>
+    </aside>
+</div><!--页脚    用于页脚导航--><div id="footer-wrapper" >
+    <!--页脚导航-->
+    <footer class="container">
+        <section>
+    <ul>
+        <li><a href="index.html">首页</a></li><li>
+        <a href="about.html">关于我们</a></li><li>
+        <a href="#">服务条款</a></li><li>
+        <a href="#">隐私策略</a></li><li>
+        <a href="contact.html">联系我们</a></li>
+    </ul>
+        </section>
+    </footer>
+</div>
+<!--section    存放版权标志-->
+<section id="copyright" class="container">
+Copyright(C) <a href="index.html">bookstore</a>2018 ,All Rights Reserved By Lawrence.
+    <address>通讯地址：辽河西路18号 &nbsp &nbsp；联系电话：（+86）15641157553  &nbsp &nbsp；个人邮箱：1209786067@qq.com</address>
+</section>
+</body>
+</html>
